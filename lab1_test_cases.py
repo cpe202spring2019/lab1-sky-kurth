@@ -5,7 +5,9 @@ from lab1 import *
 class TestLab1(unittest.TestCase):                                              
                                                                                 
     def test_max_list_iter(self):                                               
-        """ Confirms Error is raised when list is none """                      
+        """ Confirms Error is raised when list is none, 
+        function returns max value in int list, 
+        and None is returned for empty lists """                      
         tlist = None                                                            
         with self.assertRaises(ValueError):  # used to check for exception      
             max_list_iter(tlist)                                                
@@ -15,15 +17,17 @@ class TestLab1(unittest.TestCase):
         self.assertEqual(max_list_iter([]), None)                               
                                                                                 
     def test_reverse_rec(self):                                                 
-        """Confirms Error is raised when list is none"""                        
+        """Confirms Error is raised when list is none, 
+        and function returns reversed int list"""                        
         tlist = None                                                            
         with self.assertRaises(ValueError):  # used to check for exception      
-            reverse_rec(tlist)                                                  
-        # Confirms function returns reversed int list                           
+            reverse_rec(tlist)                                                                             
         self.assertEqual(reverse_rec([1,2,3]),[3,2,1])                          
                                                                                 
     def test_bin_search(self):                                                  
-        """ Confirms Error is raised when list is none """                      
+        """ Confirms Error is raised when list is none, 
+        correct index returned when equal, above, and below, 
+        and None returned when list epmty"""                      
         tlist = None                                                            
         with self.assertRaises(ValueError):  # used to check for exception      
             bin_search(3, 4, 7, tlist)                                          
