@@ -19,6 +19,9 @@ class Location:
 
 def main():
     loc1 = Location("SLO", 35.3, -120.7)
+    loc2 = Location("Paris", 48.9, 2.4)
+    loc3 = Location("SLO", 35.3, -120.7)
+    loc4 = loc1
 
     print("Location 1:",loc1)
     print("Location 2:",loc2)
