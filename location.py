@@ -19,17 +19,6 @@ class Location:
 
 def main():
     loc1 = Location("SLO", 35.3, -120.7)
-   def __eq__(self, other):
-        return ((type(other) == Location)
-          and self.name == other.name
-          and self.lat == other.lat
-          and self.lon == other.lon
-        )
-
-    def __repr__(self):
-        return ("Location({!r}, {!r}, {!r})".format(self.name, self.lat, self.lon)) loc2 = Location("Paris", 48.9, 2.4)
-    loc3 = Location("SLO", 35.3, -120.7)
-    loc4 = loc1
 
     print("Location 1:",loc1)
     print("Location 2:",loc2)
