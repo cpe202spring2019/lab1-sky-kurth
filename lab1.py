@@ -12,6 +12,8 @@ def max_list_iter(int_list):  # must use iteration not recursion
         return highest
 
 def reverse_rec(int_list):   # must use recursion
+    if int_list == None:
+        raise ValueError
     if int_list == [] :
         return []
     else:
